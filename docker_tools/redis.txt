@@ -1,0 +1,6 @@
+
+docker pull redis 
+
+docker run --name redisdb -p 6379:6379 -v /home/ec2-user/data/redis:/data  -d redis redis-server
+
+docker run -ti --rm --name redis -p 6379:6379 redis redis-server
